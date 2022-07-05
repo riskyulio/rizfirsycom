@@ -1,0 +1,46 @@
+.button {
+  outline: none;
+  border: none;
+  background-color: #ff01f5;
+  color: #4700d8;
+  font-family: "Press Start 2P", cursive;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.button::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 1rem;
+  border: solid 2px #4700d8;
+  background-color: transparent;
+}
+.button::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  border-radius: 1rem;
+  background-color: #4700d8;
+  z-index: -1;
+}
+
+.button:hover {
+  background-color: #fff;
+  transform: translateY(4px);
+}
+
+.button:hover:before {
+  bottom: 0;
+  background-color: transparent;
+}

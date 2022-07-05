@@ -1,0 +1,40 @@
+.card {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.card::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 2rem;
+  border: solid 4px #4700d8;
+}
+.card::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -0.5rem;
+  border-radius: 2rem;
+  background-color: #4700d8;
+  z-index: -1;
+}
+
+.card:hover {
+  transform: translateY(16px);
+}
+
+.card:hover:before {
+  bottom: 0;
+  background-color: #fff;
+}
