@@ -10,7 +10,7 @@ const MainNavigation = () => {
       <ul className={classes.menu}>
         <li>
           <Button design="nav-menu">
-            <Link href="/">Home</Link>
+            <Link href="/home">Home</Link>
           </Button>
         </li>
         <li>

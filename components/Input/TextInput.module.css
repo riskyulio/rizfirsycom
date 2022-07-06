@@ -1,0 +1,61 @@
+.textInputWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  border-radius: 1rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.textInput::placeholder {
+  font-size: 0.8rem;
+}
+
+.textInput {
+  padding-left: 1rem;
+  height: 56px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+}
+
+.textInputWrapper::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 1rem;
+  border: solid 2px var(--purple);
+}
+
+.textInputWrapper::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  border-radius: 1rem;
+  background-color: var(--purple);
+  z-index: -3;
+}
+
+.textInputWrapper:hover {
+  transform: translateY(4px);
+}
+
+.textInputWrapper:hover:before {
+  bottom: 0;
+  background-color: transparent;
+}

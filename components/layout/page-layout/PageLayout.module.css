@@ -3,11 +3,16 @@
 }
 
 .main {
+  z-index: 0;
   min-height: 100vh;
+  padding-top: 4rem;
 }
 
 @media (max-width: 600px) {
   .container {
     padding: 0 1rem;
+  }
+  .main {
+    padding-top: 2rem;
   }
 }

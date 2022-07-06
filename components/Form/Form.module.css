@@ -1,13 +1,14 @@
 .form {
-  padding: 2rem;
-  border-radius: 2rem;
-  background-color: var(--bluesky);
-  border: solid 4px var(--purple);
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .form {
+    justify-content: flex-start;
+    align-items: center;
+  }
 }

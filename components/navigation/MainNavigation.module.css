@@ -6,10 +6,11 @@
   align-items: center;
 
   padding: 1rem;
-  border: solid 2px var(--purple);
+  border: solid 4px var(--purple);
   border-radius: 2rem;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .mainNavigation::before {
