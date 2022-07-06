@@ -9,7 +9,25 @@ body {
   font-family: "Press Start 2P", cursive;
 }
 
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+:root {
+  --purple: #4700d8;
+  --bluesky: #00d1ff;
+  --green: #00ff29;
+  --lime: #ebff00;
+  --pink: #ff01f5;
+  --white: #fff;
 }

@@ -1,0 +1,55 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--bluesky);
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: solid 2px var(--purple);
+  border-radius: 1rem;
+}
+
+.logo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  background-color: var(--purple);
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.logo:hover {
+  transform: translateY(4px);
+}
+.logo:hover:before {
+  bottom: 0;
+  background-color: transparent;
+}
+
+.logo span {
+  margin-left: 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+}

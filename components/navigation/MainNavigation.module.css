@@ -1,0 +1,50 @@
+.mainNavigation {
+  position: relative;
+  top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem;
+  border: solid 2px var(--purple);
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainNavigation::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bluesky);
+  z-index: -1;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+@media (max-width: 600px) {
+  .mainNavigation {
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo,
+  .menu {
+    display: none;
+  }
+}

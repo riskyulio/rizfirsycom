@@ -1,8 +1,8 @@
 .form {
   padding: 2rem;
   border-radius: 2rem;
-  background-color: #00d1ff;
-  border: solid 4px #4700d8;
+  background-color: var(--bluesky);
+  border: solid 4px var(--purple);
 
   display: flex;
   flex-direction: column;
