@@ -1,7 +1,8 @@
 import Head from "next/head";
+import Home from "../pages/home/index";
 import { Fragment } from "react";
 
-export default function Home() {
+export default function HomeIndex() {
   return (
     <Fragment>
       <Head>
@@ -15,6 +16,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
+      <Home />
     </Fragment>
   );
 }

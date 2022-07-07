@@ -17,8 +17,8 @@
 
 html,
 body {
-  color: var(--purple);
   font-family: "Press Start 2P", cursive;
+  color: var(--purple);
 }
 
 .code {
@@ -39,7 +39,10 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5 {
+  line-height: 160%;
+}
+
 p,
 a {
   line-height: 160%;
