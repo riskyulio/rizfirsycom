@@ -1,6 +1,9 @@
 .about {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
+  position: relative;
 }
 
 .home {
@@ -83,12 +86,25 @@
   transition: linear 150ms;
 }
 
+.giphy-embed {
+  width: 200px;
+  height: 200px;
+  border-radius: 2rem;
+}
+
 .photo {
-  width: fit-content;
+  position: absolute;
+  right: -4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
   border-radius: 2rem;
   background-color: #fff;
   position: relative;
   cursor: pointer;
+  z-index: 2;
 }
 
 .photo::after {
@@ -125,17 +141,16 @@
   background-color: #fff;
 }
 
-.giphy-embed {
-  width: 100%;
-  height: 100%;
-  height: auto;
-}
-
 .biodata {
+  height: 100%;
+  cursor: pointer;
   position: relative;
   max-width: 600px;
   border-radius: 2rem;
   padding: 2rem;
+  padding-left: 5rem;
+  font-size: 1rem;
+  line-height: 160%;
   border-radius: 2rem;
   background-color: var(--lime);
 }
@@ -165,7 +180,20 @@
   z-index: -1;
 }
 
+.biodata:hover {
+  transform: translateY(16px);
+}
+
+.biodata:hover:before {
+  bottom: 0;
+  background-color: var(--lime);
+}
+
 @media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    position: relative;
+  }
   .home {
     gap: 2rem;
   }
@@ -182,5 +210,51 @@
   .hero h1 {
     margin-top: 1rem;
     font-size: 2rem;
+  }
+
+  .photo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: unset;
+    transform: unset;
+    right: unset;
+    left: unset;
+    bottom: unset;
+    border-radius: 1rem;
+  }
+
+  .photo::after,
+  .photo::before {
+    border-radius: 1rem;
+  }
+
+  .photo:hover {
+    transform: unset;
+  }
+
+  .photo:hover:before {
+    bottom: unset;
+    background-color: unset;
+  }
+
+  .giphy-embed {
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+  }
+
+  .biodata {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+
+  .biodata:hover {
+    transform: unset;
+  }
+
+  .biodata:hover:before {
+    bottom: unset;
+    background-color: var(--purple);
   }
 }

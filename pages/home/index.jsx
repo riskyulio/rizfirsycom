@@ -25,7 +25,7 @@ const Home = () => {
           </Link>
         </div>
       </section>
-      <section id="about" className={classes.photo}>
+      <section id="about" className={classes.about}>
         <div className={classes.photo}>
           <iframe
             src="https://giphy.com/embed/3o6Ztl7oraKm4ZJ9mw"
@@ -40,9 +40,6 @@ const Home = () => {
           positive brain!
         </div>
       </section>
-      <section id="whatIDo">What I do</section>
-      <section id="whatIActuallyDo">What I do</section>
-      <section id="review">review</section>
     </div>
   );
 };
